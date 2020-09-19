@@ -163,7 +163,6 @@ button:focus {
 
 .contacts-list {
   display: flex;
-  /* margin-left: auto; */
 }
 
 .contacts-list .item {
@@ -434,6 +433,7 @@ button:focus {
     border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
 .icon {
   width: 20px;
   height: 20px;
@@ -582,9 +582,9 @@ button:focus {
   padding: 20px 24px;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
-  border-bottom: 1px solid var(--border-card);
-  border-right: 1px solid var(--border-card);
-  border-left: 1px solid var(--border-card);
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 .projects {
@@ -987,7 +987,7 @@ button:focus {
   width: 18px;
   height: 18px;
 
-  color: var(--logo-header-color);
+  color: var(--title-text-color);
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1049,7 +1049,6 @@ button:focus {
   display: flex;
 
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
 }
 

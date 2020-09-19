@@ -1,0 +1,101 @@
+.page-header {
+    @include font(500, 14px, 1.14, 0.02em);
+
+    border-bottom: 1px solid #ececec;
+}
+
+// Навигация
+
+.container {
+    @extend %container;
+    @include flexbox(center);
+}
+
+.page-header__nav {
+    @include flexbox(center);
+}
+
+.site-nav {
+    @extend %list;
+    @include flexbox();
+
+    & .site-nav__item:not(:last-child) {
+        margin-right: 50px;
+    }
+}
+
+.site-nav__link {
+    display: block;
+    padding: 32px 0;
+
+    color: $title-color;
+
+    @extend %link;
+
+    transition: color $cubic;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.site-nav__link--accent {
+    position: relative;
+    color: $accent-color;
+
+    &::before {
+        position: absolute;
+        display: block;
+        content: "";
+
+        bottom: -1px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+
+        background-color: $accent-color;
+    }
+}
+
+// Контакты
+
+.contacts-content {
+    @include flexbox(center);
+    margin-left: auto;
+}
+
+.contacts {
+    @extend %list;
+    @include flexbox();
+
+    & .contacts__item {
+        display: block;
+    }
+
+    & .contacts__item+.contacts__item {
+        margin-left: 50px;
+    }
+}
+
+.contacts__link {
+    @extend %link;
+    @include flexbox(center);
+
+    color: $primery-text-color;
+
+    transition: color $cubic;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.contacts__icon {
+    display: block;
+    margin-right: 10px;
+
+    @extend %fill;
+}

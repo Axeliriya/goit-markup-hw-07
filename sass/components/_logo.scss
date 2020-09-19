@@ -1,0 +1,18 @@
+.logo {
+    color: $accent-color;
+
+    @include font(700, 26px, 1.2, 0.03em, Raleway);
+    @extend %link;
+
+    .page-header & {
+        margin-right: 93px;
+    }
+}
+
+.logo--straight {
+    color: #000000;
+}
+
+.logo--invers {
+    color: $primery-color;
+}
