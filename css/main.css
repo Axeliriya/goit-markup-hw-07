@@ -1035,10 +1035,6 @@ body {
           justify-content: flex-start;
 }
 
-.socials__item + .socials__item {
-  margin-left: 10px;
-}
-
 .socials__link--inverse {
   display: -webkit-box;
   display: -ms-flexbox;
