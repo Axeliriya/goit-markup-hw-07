@@ -165,7 +165,7 @@
 }
 
 .checkbox__input {
-    @extend .visually-hidden;
+    @extend %visually-hidden;
 }
 
 .checkbox__lable {

@@ -3,7 +3,7 @@
 }
 
 .feature__title {
-    @extend .visually-hidden;
+    @extend %visually-hidden;
 }
 
 .feature__list {

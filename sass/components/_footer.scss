@@ -55,10 +55,6 @@
     color: $primery-color;
 }
 
-.social__list {
-    @include flexbox();
-}
-
 .socials__link--inverse {
     @include flexbox(center, center);
     width: 44px;
