@@ -8,6 +8,6 @@
 
 @mixin flexbox($align:stretch, $justify:flex-start) {
     display: flex;
-    justify-content: $justify;
     align-items: $align;
+    justify-content: $justify;
 }

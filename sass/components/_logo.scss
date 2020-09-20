@@ -3,16 +3,21 @@
 
     @include font(700, 26px, 1.2, 0.03em, Raleway);
     @extend %link;
-
-    .page-header & {
-        margin-right: 93px;
-    }
 }
 
-.logo--straight {
+.page-header__logo {
+    margin-right: 93px;
+}
+
+.logo--part-black {
     color: #000000;
 }
 
-.logo--invers {
+.page-footer__logo {
+    display: inline-block;
+    margin: 0 0 20px;
+}
+
+.logo--part-white {
     color: $primery-color;
 }

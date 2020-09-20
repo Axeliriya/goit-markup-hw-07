@@ -1,3 +1,5 @@
+// Бэкдроп
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -12,16 +14,12 @@
     transition: opacity $cubic;
 }
 
-.backdrop {
-    &.is-hidden {
-        opacity: 0;
-        pointer-events: none;
-    }
-
-    & .modal {
-        transform: translate(-50%, -50%) scale(1.1);
-    }
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
 }
+
+// Модальное окно
 
 .modal {
     position: absolute;
@@ -164,10 +162,10 @@
     position: relative;
     margin: 0 0 30px;
     text-align: center;
+}
 
-    .checkbox__input {
-        @extend .visually-hidden;
-    }
+.checkbox__input {
+    @extend .visually-hidden;
 }
 
 .checkbox__lable {

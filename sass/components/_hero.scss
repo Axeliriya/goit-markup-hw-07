@@ -1,4 +1,4 @@
-.overlay {
+.hero__overlay {
     @include flexbox(center, center);
     flex-direction: column;
     max-width: 1600px;

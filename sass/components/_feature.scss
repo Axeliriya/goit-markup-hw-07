@@ -10,14 +10,13 @@
     @extend %list;
     @extend %container;
     @include flexbox();
+}
 
-    & .feature__item {
-        width: calc((100%-90px) / 4);
-    }
+.feature__item {
+    width: calc((100%-90px) / 4);
 
-    & .feature__item:not(:last-child) {
+    &:not(:last-child) {
         margin-right: 30px;
-        width: calc((100%-90px) / 4);
     }
 }
 

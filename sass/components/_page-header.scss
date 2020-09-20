@@ -8,6 +8,9 @@
 
 .container {
     @extend %container;
+}
+
+.page-header__container {
     @include flexbox(center);
 }
 
@@ -18,10 +21,10 @@
 .site-nav {
     @extend %list;
     @include flexbox();
+}
 
-    & .site-nav__item:not(:last-child) {
-        margin-right: 50px;
-    }
+.site-nav__item:not(:last-child) {
+    margin-right: 50px;
 }
 
 .site-nav__link {
@@ -69,14 +72,14 @@
 .contacts {
     @extend %list;
     @include flexbox();
+}
 
-    & .contacts__item {
-        display: block;
-    }
+.contacts__item {
+    display: block;
+}
 
-    & .contacts__item+.contacts__item {
-        margin-left: 50px;
-    }
+.contacts__item+.contacts__item {
+    margin-left: 50px;
 }
 
 .contacts__link {
