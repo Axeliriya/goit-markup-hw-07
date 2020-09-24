@@ -114,7 +114,7 @@ summary {
   display: list-item;
 }
 
-.visually-hidden, .feature__title, .checkbox__input {
+.feature__title, .checkbox__input {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -156,7 +156,7 @@ button:focus {
   padding: 94px 0;
 }
 
-.working__title, .team__title, .regular-clients__title {
+.working__title, .team__title, .team__fullname, .regular-clients__title {
   color: #212121;
 }
 
