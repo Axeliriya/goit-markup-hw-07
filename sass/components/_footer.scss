@@ -1,119 +1,120 @@
 .page-footer {
-    padding: 60px 0;
-    background-color: $secondery-color;
+  padding: 60px 0;
+  background-color: $secondery-color;
 }
 
 .container {
-    @extend %container;
+  @extend %container;
 }
 
 .page-footer__content {
-    @include flexbox(baseline, space-between);
+  @include flexbox(baseline, space-between);
 }
 
 // Блок адреса
 
 .address__content {
-    @include flexbox();
-    flex-direction: column;
-    font-style: normal;
+  @include flexbox();
+  flex-direction: column;
+  font-style: normal;
 }
 
 .address__text {
-    margin: 0 0 9px;
+  margin: 0 0 9px;
 
-    color: $primery-color;
+  color: $primery-color;
 
-    @include font(400, 14px, 1.71);
+  @include font(400, 14px, 1.71);
 }
 
 .address__link {
-    @extend %link;
-    display: inline-block;
+  @extend %link;
+  display: inline-block;
 
-    color: $prompt-color;
-    @include font($normal, $primery-text-size, 1.71);
+  color: $prompt-color;
+  @include font($normal, $primery-text-size, 1.71);
 
-    transition: color $cubic;
+  transition: color $cubic;
 
-    &:not(:last-child) {
-        margin: 0 0 9px;
-    }
+  &:not(:last-child) {
+    margin: 0 0 9px;
+  }
 
-    &:hover,
-    &:focus {
-        color: $accent-color;
-    }
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 // Блок присоединиться
 
 .join__title {
-    @include font($bold, $primery-text-size, 1.14);
-    text-transform: uppercase;
-    margin: 0 0 20px;
-    color: $primery-color;
+  @include font($bold, $primery-text-size, 1.14);
+  text-transform: uppercase;
+  margin: 0 0 20px;
+  color: $primery-color;
 }
 
 .socials__link--inverse {
-    @include flexbox(center, center);
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
+  @include flexbox(center, center);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: $primery-color;
+
+  transition: color $cubic, background-color $cubic;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
     color: $primery-color;
-
-    transition: color $cubic, background-color $cubic;
-
-    &:hover,
-    &:focus {
-        background-color: $accent-color;
-        color: $primery-color;
-    }
+  }
 }
 
 .subscribe__title {
-    @include font($bold, $primery-text-size, 1.14);
-    text-transform: uppercase;
-    margin: 0 0 20px;
-    color: $primery-color;
+  @include font($bold, $primery-text-size, 1.14);
+  text-transform: uppercase;
+  margin: 0 0 20px;
+  color: $primery-color;
 }
 
 .subscribe__form {
-    @include flexbox(center);
+  @include flexbox(center);
 }
 
 .subscribe__input {
-    @include flexbox(center);
-    width: 360px;
-    height: 50px;
-    margin-right: 10px;
-    padding: 15px 16px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
+  @include flexbox(center);
+  width: 360px;
+  height: 50px;
+  margin-right: 10px;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
 
-    background-color: transparent;
+  background-color: transparent;
+  color: $primery-color;
+
+  &::placeholder {
+    @include font($normal, $secondery-text-size, 1.25);
+
+    color: $prompt-color;
+  }
+
+  &:focus {
     color: $primery-color;
-
-    &::placeholder {
-        @include font($normal, $secondery-text-size, 1.25);
-
-        color: $prompt-color;
-    }
-
-    &:focus {
-        color: $primery-color;
-    }
+  }
 }
 
 .subscribe__button {
-    @extend %btn;
-    @include flexbox(center);
-    color: $primery-color;
+  @extend %btn;
+  @include flexbox(center);
+  @include font($bold, $secondery-text-size, 1.9, 0.06em);
+  color: $primery-color;
 }
 
 .subscribe__icon {
-    margin-left: 10px;
-    @extend %fill;
+  margin-left: 10px;
+  @extend %fill;
 }
