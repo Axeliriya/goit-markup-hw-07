@@ -9,7 +9,7 @@
 
 .team__title {
     margin: 0 0 50px;
-    @include font(700, 36px, 1.16);
+    @include font($bold, $title-text-size, 1.16);
     @extend %heading;
     text-align: center;
 }
@@ -41,13 +41,13 @@
 
     @extend %heading;
 
-    @include font(500, 16px, 1.9);
+    @include font($medium, $secondery-text-size, 1.9);
     text-align: center;
 }
 
 .team__specialty {
     margin: 0 0 16px;
 
-    @include font(400, 16px, 1.18);
+    @include font($normal, $secondery-text-size, 1.18);
     text-align: center;
 }

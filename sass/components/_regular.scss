@@ -8,7 +8,7 @@
 
 .regular-clients__title {
     margin: 0 0 50px;
-    @include font(700, 36px, 1.16);
+    @include font($bold, $title-text-size, 1.16);
     @extend %heading;
     text-align: center;
 }

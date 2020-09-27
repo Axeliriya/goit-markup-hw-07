@@ -1,7 +1,7 @@
 .logo {
     color: $accent-color;
 
-    @include font(700, 26px, 1.2, 0.03em, Raleway);
+    @include font($bold, 26px, 1.2, 0.03em, $logo-font);
     @extend %link;
 }
 

@@ -1,5 +1,5 @@
 .page-header {
-    @include font(500, 14px, 1.14, 0.02em);
+    @include font($medium, $primery-text-size, 1.14, 0.02em);
 
     border-bottom: 1px solid #ececec;
 }

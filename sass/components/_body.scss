@@ -2,5 +2,5 @@ body {
     background-color: $primery-color;
     color: $primery-text-color;
 
-    @include font(400, 14px, 1.7);
+    @include font($normal, $primery-text-size, 1.7);
 }

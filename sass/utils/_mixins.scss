@@ -1,4 +1,4 @@
-@mixin font($weight, $size, $line-height, $letter-spacing:0.03em, $family: Roboto) {
+@mixin font($weight, $size, $line-height, $letter-spacing:0.03em, $family: $common-font) {
     font-family: $family, sans-serif;
     font-weight: $weight;
     font-size: $size;

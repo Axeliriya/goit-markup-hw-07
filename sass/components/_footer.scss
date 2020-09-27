@@ -32,7 +32,7 @@
     display: inline-block;
 
     color: $prompt-color;
-    @include font(400, 14px, 1.71);
+    @include font($normal, $primery-text-size, 1.71);
 
     transition: color $cubic;
 
@@ -49,7 +49,7 @@
 // Блок присоединиться
 
 .join__title {
-    @include font(700, 14px, 1.14);
+    @include font($bold, $primery-text-size, 1.14);
     text-transform: uppercase;
     margin: 0 0 20px;
     color: $primery-color;
@@ -73,7 +73,7 @@
 }
 
 .subscribe__title {
-    @include font(700, 14px, 1.14);
+    @include font($bold, $primery-text-size, 1.14);
     text-transform: uppercase;
     margin: 0 0 20px;
     color: $primery-color;
@@ -97,7 +97,7 @@
     color: $primery-color;
 
     &::placeholder {
-        @include font(400, 16px, 1.25);
+        @include font($normal, $secondery-text-size, 1.25);
 
         color: $prompt-color;
     }

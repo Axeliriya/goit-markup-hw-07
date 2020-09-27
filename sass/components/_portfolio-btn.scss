@@ -29,7 +29,7 @@
     background-color: $alternate-bg-color;
     color: $title-color;
 
-    @include font(500, 16px, 1.62);
+    @include font($medium, $secondery-text-size, 1.62);
 
     transition: box-shadow $cubic,
         background-color $cubic,

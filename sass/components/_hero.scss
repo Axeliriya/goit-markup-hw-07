@@ -20,14 +20,14 @@
     margin: 0 0 30px;
     color: $primery-color;
 
-    @include font(900, 44px, 1.36, 0.06em);
+    @include font($black, 44px, 1.36, 0.06em);
     text-align: center;
     text-transform: uppercase;
 }
 
 .hero__button {
     @extend %btn;
-    @include font(700, 16px, 1.9, 0.06em);
+    @include font($bold, $secondery-text-size, 1.9, 0.06em);
     transition: box-shadow $cubic;
 
     &:hover,

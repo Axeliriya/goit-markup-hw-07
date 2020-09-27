@@ -79,7 +79,7 @@
     margin: 0 0 12px;
     padding: 0;
 
-    @include font (700, 20px, 1.15, 0.03em);
+    @include font ($bold, 20px, 1.15);
     text-align: center;
 
     color: $title-color;
@@ -154,7 +154,7 @@
     &::placeholder {
         color: rgba(117, 117, 117, 0.5);
 
-        @include font (400, 12px, 1.16, 0.01em);
+        @include font ($normal, $primery-text-size, 1.16, 0.01em);
     }
 }
 
@@ -205,7 +205,7 @@
 
 .modal__button-submit {
     @extend %btn;
-    @include font(700, 16px, 1.9, 0.06em);
+    @include font($bold, $secondery-text-size, 1.9, 0.06em);
     transition: box-shadow $cubic;
 
     &:hover,
